@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>catgifsdashboard</id>
+	<name>Cat Gifs Dashboard</name>
+	<summary>Cat Gifs Dashboard Widget</summary>
+	<description>Create a simple dashboard widget with pure Javascript.</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="giuseppecatillo2003@gmail.com" homepage="">Giuseppe Catillo</author>
+	<namespace>CatGifsDashboard</namespace>
+	<category>tools</category>
+	<bugs>http://test.com</bugs>
+	<dependencies>
+		<nextcloud min-version="29" max-version="30"/>
+	</dependencies>
+	<navigations>
+	<!-- we won’t need a navigation entry in Nextcloud's top menu for this app, as this app will only register dashboard widgets for the dashboard -->
+	</navigations>
+</info>

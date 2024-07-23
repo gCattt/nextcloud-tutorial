@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>pexels</id>
+	<name>Pexels</name>
+	<summary>Integrate Pexels using Smart Picker</summary>
+	<description>Integrate stock photo site Pexels.com by extending the Smart Picker component.</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="giuseppecatillo2003@gmail.com" homepage="">Giuseppe Catillo</author>
+	<namespace>Pexels</namespace>
+	<category>integration</category>
+	<bugs>http://test.com</bugs>
+	<dependencies>
+		<nextcloud min-version="26" max-version="30"/>
+	</dependencies>
+	<settings>
+		<admin>OCA\Pexels\Settings\Admin</admin>
+		<admin-section>OCA\Pexels\Settings\AdminSection</admin-section>
+	</settings>
+	<navigations>
+	</navigations>
+</info>

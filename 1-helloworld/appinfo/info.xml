@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>helloworld</id>
+	<name>Hello World</name>
+	<summary>Hello World App</summary>
+	<description>The purpose of this tutorial is to familiarize with the basic structure and functionalities of a Nextcloud app. 
+The app will display a button that can show "Hello World!👋"</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="giuseppecatillo2003@gmail.com" homepage="">Giuseppe Catillo</author>
+	<namespace>HelloWorld</namespace>
+	<category>tools</category>
+	<bugs>http://test.com</bugs>
+	<dependencies>
+		<nextcloud min-version="29" max-version="30"/>
+	</dependencies>
+	<navigations>
+		<navigation>
+			<id>helloworld</id>
+			<name>Hello World</name>
+			<route>helloworld.page.index</route>
+			<icon>app.svg</icon>
+			<type>link</type>
+		</navigation>
+	</navigations>
+</info>

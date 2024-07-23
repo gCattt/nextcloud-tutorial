@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>catgifs</id>
+	<name>Cat Gifs</name>
+	<summary>Cat Gifs App</summary>
+	<description>Standalone app that displays a list of cat gifs.</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="giuseppecatillo2003@gmail.com" homepage="">Giuseppe Catillo</author>
+	<namespace>CatGifs</namespace>
+	<category>tools</category>
+	<bugs>http://test.com</bugs>
+	<dependencies>
+		<nextcloud min-version="29" max-version="30"/>
+	</dependencies>
+	<navigations>
+		<navigation>
+			<id>tutorialtwo</id>
+			<name>Cat Gif app</name>
+			<!-- syntax is APP_ID.CONTROLLER_NAME.METHOD_NAME -->
+			<route>catgifs.page.mainPage</route>
+			<icon>app.svg</icon>
+			<order>8</order>
+		</navigation>
+	</navigations>
+</info>
