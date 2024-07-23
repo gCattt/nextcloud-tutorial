@@ -1,6 +1,6 @@
 # Note Book
 
-A template to get started with Nextcloud app development.
+A template to get started with Nextcloud app development and automated tests.
 
 ## Usage
 
