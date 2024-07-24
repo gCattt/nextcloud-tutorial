@@ -1,0 +1,110 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "Europe/Berlin",
+  "schedule": [
+    "every weekend"
+  ],
+  "reviewers": ["max-nextcloud", "mejo-"],
+  "labels": ["dependencies"],
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted",
+  "ignoreUnstable": false,
+  "baseBranches": [
+    "main",
+    "stable29",
+    "stable28",
+    "stable27"
+  ],
+  "enabledManagers": [
+    "npm"
+  ],
+  "ignoreDeps": [
+    "node",
+    "npm"
+  ],
+  "packageRules": [
+    {
+      "groupName": "vueuse",
+      "matchPackagePrefixes": [
+        "@vueuse/"
+      ]
+    },
+    {
+      "groupName": "cypress",
+      "matchPackageNames": [
+        "cypress",
+        "@nextcloud/cypress"
+      ],
+      "matchPackagePrefixes": [
+        "@cypress/"
+      ]
+    },
+    {
+      "groupName": "vite",
+      "matchPackageNames": [
+        "vite",
+        "vite-plugin-commonjs"
+      ],
+      "matchPackagePrefixes": [
+        "@vitejs/"
+      ]
+    },
+    {
+      "groupName": "yjs",
+      "matchPackageNames": [
+        "yjs",
+        "y-websocket",
+        "@hocuspocus/provider",
+        "lib0"
+      ]
+    },
+
+    {
+      "groupName": "highlight",
+      "matchPackageNames": [
+        "highlight.js",
+        "lowlight"
+      ]
+    },
+    {
+      "groupName": "jest",
+      "matchPackageNames": [
+        "jest",
+        "@vue/vue2-jest",
+        "jest-environment-jsdom"
+      ]
+    },
+    {
+      "groupName": "tiptap",
+      "matchPackagePrefixes": [
+        "@tiptap/",
+        "prosemirror-"
+      ]
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "matchBaseBranches": ["stable29", "stable28", "stable27", "stable26"],
+      "enabled": false
+    },
+    {
+      "matchUpdateTypes": ["major", "minor"],
+      "matchBaseBranches": ["stable26", "stable27"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["vue"],
+      "allowedVersions": "<3"
+    },
+    {
+      "matchPackageNames": ["vuex"],
+      "allowedVersions": "<4"
+    },
+    {
+      "matchPackageNames": ["@vue/test-utils"],
+      "allowedVersions": "<2"
+    }
+  ]
+}
