@@ -9,3 +9,4 @@ Nextcloud app development tutorials:
 
 ## References
 - https://cloud.nextcloud.com/s/iyNGp8ryWxc7Efa?path=%2F
+- https://github.com/nextcloud/text
